@@ -1,0 +1,21 @@
+i {
+    font-size: 1.5rem;
+    color:blue;
+}
+
+button {
+    margin: auto !important;
+    text-align: center !important;
+    display:flex;
+    justify-content: center;
+}
+
+#boton {
+    display:flex;
+    justify-content: center;
+}
+
+.error {
+    color: red;
+    font-style: italic;
+}
