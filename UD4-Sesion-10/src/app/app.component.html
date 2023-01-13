@@ -1,0 +1,35 @@
+<form class="calculadora">
+  <app-header></app-header>
+  <!-- Resultado -->
+  <div class="resultado_calculadora">
+    <input type="text" placeholder="" id="resultado" disabled value="S/ {{valorInput}}">
+  </div>
+  <!-- Botones -->
+  <div class="botones_calculadora">
+    <button (click)="buton($event)" class="btn btn-oscuro">&divide;</button>
+    <button (click)="buton($event)" class="btn btn-blanco">1</button>
+    <button (click)="buton($event)" class="btn btn-blanco">2</button>
+    <button (click)="buton($event)" class="btn btn-blanco">3</button>
+    <button (click)="buton($event)" class="btn btn-blanco">&#9003;</button>
+
+    <button (click)="buton($event)" class="btn btn-oscuro">x</button>
+    <button (click)="buton($event)" class="btn btn-blanco">4</button>
+    <button (click)="buton($event)" class="btn btn-blanco">5</button>
+    <button (click)="buton($event)" class="btn btn-blanco">6</button>
+    <button (click)="buton($event)" class="btn btn-blanco">C</button>
+
+    <button (click)="buton($event)" class="btn btn-oscuro">-</button>
+    <button (click)="buton($event)" class="btn btn-blanco">7</button>
+    <button (click)="buton($event)" class="btn btn-blanco">8</button>
+    <button (click)="buton($event)" class="btn btn-blanco">9</button>
+    <button (click)="buton($event)" class="btn btn-doble" style="background-color: {{color}}">&check;</button>
+
+    <button (click)="buton($event)" class="btn btn-oscuro">+</button>
+    <button (click)="buton($event)" class="btn btn-blanco"><i class="fa fa-calendar-minus"></i></button>
+    <button (click)="buton($event)" class="btn btn-blanco">0</button>
+    <button (click)="buton($event)" class="btn btn-blanco">.</button>
+  </div>
+
+  <!-- Fecha -->
+  <app-date></app-date>
+</form>
